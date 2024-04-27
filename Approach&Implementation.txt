@@ -1,0 +1,14 @@
+Approach:
+
+Understanding the Problem: First, I carefully read the requirements to understand what needs to be done.
+Designing the Solution: I planned the solution by breaking it down into smaller steps. I decided to use Python because of the libraries python provides for web scraping like BeautifulSoup and handling CSV files, and making HTTP requests.
+Implementing the Solution: I started by writing the code to extract product information from a single Amazon product URL. Once that was working, I extended the code to read URLs from a CSV file, extract information for each URL, and save it to another CSV file.
+Testing and Refinement: I tested the code with different inputs to ensure it worked correctly and handled various scenarios and after this I refined the code for readability and added error handling to deal with issues like invalid URLs or network errors.
+
+Challenges Faced:
+
+Parsing Amazon URLs: One challenge was parsing Amazon URLs to extract the ASIN (Amazon Standard Identification Number) and product name. I had to carefully analyze the URL structure and use Python's urlparse function to extract the required information.
+Handling Errors: Implementing error handling was crucial, especially for cases like invalid URLs or network issues. I used try-except blocks to catch exceptions and provide informative error messages to the user.
+CLI Implementation: Integrating a command-line interface (CLI) using argparse and  ensuring proper usage and error handling for command-line arguments required attention to detail.
+
+Overall, the approach involved careful planning, step-by-step implementation, thorough testing, and addressing challenges as they arise. The result is a Python script that efficiently extracts product information from Amazon URLs provided in a CSV file.
